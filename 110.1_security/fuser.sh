@@ -2,7 +2,7 @@
 
 # Author:   jOELpipAS
 # Date:     Nov|01|2024
-# Modified:  
+# Modified: Nov|07|2024 Error correction (line 75).
 
 clear
 
@@ -72,7 +72,7 @@ fi
 
 
 # Question 5
-read -p $'\e[32m5) :What type of information does the fuser -u command output?:\n   a) Only the user IDs of the processes accessing the file.\n   b) User names and process IDs of processes accessing the file.\n   c) Only the process IDs accessing the file.\n   d) The file permissions of each process.\n\e[33m   ' p5
+read -p $'\e[32m5) What type of information does the fuser -u command output?:\n   a) Only the user IDs of the processes accessing the file.\n   b) User names and process IDs of processes accessing the file.\n   c) Only the process IDs accessing the file.\n   d) The file permissions of each process.\n\e[33m   ' p5
 if [[ $p5 = "b" ]]; then 
     echo '   ✅'; echo
 else

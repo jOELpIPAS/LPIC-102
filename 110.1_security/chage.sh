@@ -2,7 +2,7 @@
 
 # Author:   jOELpipAS
 # Date:     Nov|04|2024
-# Modified:  
+# Modified: Nov|07|2024 Error correction (line 134)
 
 clear
 
@@ -131,7 +131,7 @@ fi
 
 # Question 4
 read -p $'\e[32m4) Set the expiration date Aug 25th 2550 for the user qlsaico, using the short option format:\e[33m ' p4
-if [[ $p4 = "chage -E 2550-08-25" ]]; then 
+if [[ $p4 = "chage -E 2550-08-25 qlsaico" ]]; then 
     echo '   ✅'; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m chage -E 2550-08-25 qlsaico'
