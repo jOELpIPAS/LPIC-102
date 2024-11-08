@@ -3,6 +3,7 @@
 # Author:   jOELpipAS
 # Date:     Nov|01|2024
 # Modified: Nov|07|2024 Error correction (line 75).
+#           Nov|07|2024 Delete 'shopt -s nocasematch'
 
 clear
 
@@ -20,7 +21,6 @@ echo -e "\e[33m************************\e[0m"
 echo; echo
 sleep 1
 
-shopt -s nocasematch
 
 
 echo 
