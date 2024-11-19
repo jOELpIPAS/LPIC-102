@@ -2,7 +2,8 @@
 
 # Author:   jOELpipAS
 # Date:     Nov|04-05|2024
-# Modified:  
+# Modified: Nov|10|2024     Optional answer added (line 57).  
+#           Nov|15|2024     Question 15 added
 
 clear
 
@@ -54,10 +55,10 @@ fi
 
 # Question 4
 read -p $'\e[32m4) Scan the whole subnet 103.76.228.:\e[33m ' p4
-if [[ $p4 = "nmap 103.76.228.*" ]]; then 
+if [[ $p4 = "nmap 103.76.228.*" || $p4 = 'nmap 103.76.228.0/24' ]]; then 
     echo '   ✅'; echo
 else
-    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m nmap 103.76.228.*'
+    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m nmap 103.76.228.*, nmap 103.76.228.0/24'
     echo
 fi
 
@@ -160,6 +161,19 @@ else
     echo -e '    \e[31m❌ CORRECT ANSWER >>\e[0m nmap -sU localhost, nmap localhost -sU'
     echo
 fi
+
+
+
+# Question 15
+read -p $'\e[32m15) Provide two different nmap commands to scan all 65535 ports on localhost, separated by one comma and one space:\n\e[33m    ' p15
+if [[ $p15 = 'nmap -p 1-65535 localhost, nmap -p- localhost' || $p15 = 'nmap -p- localhost, nmap -p 1-65535 localhost' ]]; then 
+    echo '    ✅'; echo
+else
+    echo -e '    \e[31m❌ CORRECT ANSWER >>\e[0m nmap -p 1-65535 localhost, nmap -p- localhost'
+    echo
+fi
+
+
 
 
 echo

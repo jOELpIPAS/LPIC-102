@@ -2,7 +2,7 @@
 
 # Author:   jOELpipAS
 # Date:     Nov|07|2024
-# Modified:  
+# Modified: Nov|16|2024  Section I, Question 3  
 
 clear
 
@@ -50,10 +50,10 @@ fi
 
 # Question 3
 read -p $'\e[32m3) Enter the sudo command that check the status of apache2 as user pipas:\e[33m ' p3
-if [[ $p3 = "sudo -u pipas systemctl status apache2" ]]; then 
+if [[ $p3 = "sudo -u pipas systemctl status apache2" || $p3 = 'sudo -u pipas /usr/bin/systemctl status apache2' ]]; then 
     echo '   ✅'; echo
 else
-    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m sudo -u pipas systemctl status apache2'
+    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m sudo -u pipas systemctl status apache2, or sudo -u pipas /usr/bin/systemctl status apache2'
     echo
 fi
 
@@ -166,7 +166,7 @@ fi
 
 
 # Question 9
-read -p $'\e[32m9) Change the text editor for visudo modifying the editor variable:\e[33m ' p9
+read -p $'\e[32m9) Change the text editor for visudo to vim, modifying the editor variable:\e[33m ' p9
 if [[ $p9 = 'EDITOR=/usr/bin/vim visudo' ]]; then 
     echo '   ✅'; echo
 else
@@ -230,6 +230,7 @@ else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m Runas_Alias'
     echo
 fi
+
 
 
 

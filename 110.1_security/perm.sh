@@ -2,7 +2,8 @@
 
 # Author:   jOELpipAS
 # Date:     Nov|03|2024
-# Modified:  
+# Modified: Nov|15|2024  Section III added (5 questions)  
+
 
 clear
 
@@ -197,6 +198,64 @@ if [[ $p7 = 'find /usr/bin -perm /6000' ]]; then
     echo '   ✅'; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m find /usr/bin -perm /6000'
+    echo
+fi
+
+
+echo 
+echo -e "\e[0m-----------------------------------------------------"
+echo -e "\e[36mIII. sTiCKY biT\e[0m"
+echo -----------------------------------------------------
+#echo -e '\e[33mEnter the corresponding configuration file (full path).'
+echo; echo
+
+
+# Question 1
+read -p $'\e[32m1) Set the following permissions on ~/temporal, using the numeric representation: rwxr-xr-t\e[33m ' p1
+if [[ $p1 = 'chmod 1755 ~/temporal' ]]; then 
+    echo '   ✅'; echo
+else
+    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m chmod 1755 ~/temporal'
+    echo
+fi
+
+
+# Question 2
+read -p $'\e[32m2) Set the sticky bit on ~/temporal, using the symbolic representation:\e[33m ' p2
+if [[ $p2 = "chmod +t ~/temporal" ]]; then 
+    echo '   ✅ '; echo
+else
+    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m chmod +t ~/temporal'
+    echo
+fi
+
+
+# Question 3
+read -p $'\e[32m3) Find directories with the sticky bit (and any other permissions) set on your home directory:\e[33m ' p3
+if [[ $p3 = "find ~ -perm -1000" || $p3 = 'find ~ -perm /1000' ]]; then 
+    echo '   ✅'; echo
+else
+    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m find ~ -perm -1000, or find ~ -perm /1000'
+    echo
+fi
+
+
+# Question 4
+read -p $'\e[32m4) Unset the sticky bit on ~/temporal, using the symbolic representation:\e[33m ' p4
+if [[ $p4 = "chmod -t ~/temporal" ]]; then 
+    echo '   ✅'; echo
+else
+    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m chmod -t ~/temporal'
+    echo
+fi
+
+
+# Question 5
+read -p $'\e[32m5) Unset the sticky bit on ~/temporal, using the numeric representation, and leaving the following permissions: rwxr-xr-x\n\e[33m   ' p5
+if [[ $p5 = "chmod 0755 ~/temporal" ]]; then 
+    echo '   ✅'; echo
+else
+    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m chmod 0755 ~/temporal'
     echo
 fi
 

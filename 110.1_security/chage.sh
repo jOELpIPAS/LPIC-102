@@ -190,8 +190,18 @@ fi
 
 
 # Question 10
-read -p $'\e[32m10) Use the interactive mode with user bigpoppa:\e[33m ' p10
-if [[ $p10 = 'chage bigpoppa' ]]; then 
+read -p $'\e[32m10) Previously the account wnpitiao had an expiration date set. How can the expiration date get set to never?:\n   \e[33m ' p10
+if [[ $p10 = 'chage -E -1 wnpitiao' ]]; then 
+    echo '    ✅'; echo
+else
+    echo -e '    \e[31m❌ CORRECT ANSWER >>\e[0m chage -E -1 wnpitiao'
+    echo
+fi
+
+
+# Question 11
+read -p $'\e[32m11) Use the interactive mode with user bigpoppa:\e[33m ' p11
+if [[ $p11 = 'chage bigpoppa' ]]; then 
     echo '    ✅'; echo
 else
     echo -e '    \e[31m❌ CORRECT ANSWER >>\e[0m chage bigpoppa'

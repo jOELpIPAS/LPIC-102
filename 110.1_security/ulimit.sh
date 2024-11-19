@@ -2,7 +2,8 @@
 
 # Author:   jOELpipAS
 # Date:     Nov|02|2024
-# Modified:  
+# Modified: Nov|15|2024  Section II, questions 7-10 added.
+
 
 clear
 
@@ -223,6 +224,46 @@ else
 fi
 
 
+# Question 7
+read -p $'\e[32m7) Display soft limits on the maximum RSS:\e[33m ' p7
+if [[ $p7 = 'ulimit -m' || $p7 = 'ulimit -Sm' ]]; then 
+    echo '   ✅'; echo
+else
+    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m ulimit -m, or ulimit -Sm'
+    echo
+fi
+
+
+# Question 8
+read -p $'\e[32m8) Display hard limits on the maximum RSS:\e[33m ' p8
+if [[ $p8 = 'ulimit -Hm' ]]; then 
+    echo '   ✅'; echo
+else
+    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m ulimit -Hm'
+    echo
+fi
+
+
+# Question 9
+read -p $'\e[32m9) Set the soft limits on the maximum RSS to 5,000 kilobytes:\e[33m ' p9
+if [[ $p9 = 'ulimit -Sm 5000' || $p9 = 'ulimit -m 5000' ]]; then 
+    echo '   ✅'; echo
+else
+    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m ulimit -Sm 5000, or ulimit -m 5000'
+    echo
+fi
+
+
+# Question 10
+read -p $'\e[32m10) Set the hard limits on the maximum RSS to 10,000 kilobytes:\e[33m ' p10
+if [[ $p10 = 'ulimit -Hm 10000' ]]; then 
+    echo '    ✅'; echo
+else
+    echo -e '    \e[31m❌ CORRECT ANSWER >>\e[0m ulimit -Hm 10000'
+    echo
+fi
+
+
 echo 
 echo -e "\e[0m------------------------------------------------------------"
 echo -e "\e[36mIII. gENERAL sTUFF\e[0m"
@@ -240,7 +281,9 @@ else
     echo
 fi
 
+
 shopt -s nocasematch
+
 
 # Question 2
 read -p $'\e[32m2) /etc/security/limits.conf is the main configuration file of what module?:\e[33m ' p2
