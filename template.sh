@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Author:   jOELpipAS
-# Date:     Sept|13|2024
+# Date:     Jan|13|2025
 # Modified:  
 
 clear
@@ -13,12 +13,12 @@ echo -e "    \e[36mby jOELpiPAS"
 echo
 echo
 
-sleep 0.8
+sleep 0.5
 echo -e "\e[33m************************\e[0m"
 echo -e "\e[0mANSWER WITH THE TRUTH!!:"
 echo -e "\e[33m************************\e[0m"
 echo; echo
-sleep 1
+sleep 0.5
 
 shopt -s nocasematch
 
@@ -43,7 +43,7 @@ fi
 
 # Question 2
 read -p $'\e[32m2) :\e[33m ' p2
-if [[ $p2 = "" ]]; then 
+if [[ $p2 = '' ]]; then 
     echo '   ✅ '; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m '
@@ -53,7 +53,7 @@ fi
 
 # Question 3
 read -p $'\e[32m3) :\e[33m ' p3
-if [[ $p3 = "" ]]; then 
+if [[ $p3 = '' ]]; then 
     echo '   ✅'; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m '
@@ -63,7 +63,7 @@ fi
 
 # Question 4
 read -p $'\e[32m4) :\e[33m ' p4
-if [[ $p4 = "" ]]; then 
+if [[ $p4 = '' ]]; then 
     echo '   ✅'; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m '
@@ -73,7 +73,7 @@ fi
 
 # Question 5
 read -p $'\e[32m5) :\e[33m ' p5
-if [[ $p5 = "" ]]; then 
+if [[ $p5 = '' ]]; then 
     echo '   ✅'; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m '
