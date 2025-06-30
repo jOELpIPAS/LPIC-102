@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Author: jOELpipAS
-# Date:   Jan|05|2025
+# Author:    jOELpipAS
+# Date:      Jan|05|2025
+# Modified:  May|05|2025
 
 clear
 
@@ -70,7 +71,7 @@ echo; echo
 
 
 # Question 1
-read -p $'\e[32m1) Character that represents the server used as main reference:\e[33m ' p1
+read -p $'\e[32m1) Server used as main reference:\e[33m ' p1
 if [[ $p1 = "*" ]]; then 
     echo '   ✅'; echo
 else
@@ -80,7 +81,7 @@ fi
 
 
 # Question 2
-read -p $'\e[32m2) Character that represents an out of range server:\e[33m ' p2
+read -p $'\e[32m2) Out of range server:\e[33m ' p2
 if [[ $p2 = "-" ]]; then 
     echo '   ✅'; echo
 else
@@ -90,7 +91,7 @@ fi
 
 
 # Question 3
-read -p $'\e[32m3) Character that represents a good server:\e[33m ' p3
+read -p $'\e[32m3) Good server:\e[33m ' p3
 if [[ $p3 = "+" ]]; then 
     echo '   ✅'; echo
 else

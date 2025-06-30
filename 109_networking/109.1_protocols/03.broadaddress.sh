@@ -15,9 +15,9 @@ echo
 echo
 
 sleep 0.5
-echo -e "\e[33m*************************************************************************\e[0m"
-echo -e "\e[0mCalculate the BROADCAST ADDRESS given the following NETWORK_ADDRESS/CIDR:"
-echo -e "\e[33m*************************************************************************\e[0m"
+echo -e "\e[33m************************************************************\e[0m"
+echo -e "\e[0mCalculate the BROADCAST ADDRESS given the following IP/CIDR:"
+echo -e "\e[33m************************************************************\e[0m"
 echo; echo
 sleep 0.5
 

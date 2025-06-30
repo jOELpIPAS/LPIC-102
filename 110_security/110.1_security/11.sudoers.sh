@@ -131,7 +131,7 @@ read -p $'\e[32m5) Enter a specification for the user qlsaico that enables him t
 if [[ $p5 = "qlsaico ALL=(ALL:ALL) NOPASSWD: /usr/bin/systemctl status apache2" ]]; then 
     echo '   ✅'; echo
 else
-    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m qlsaico ALL=(ALL:ALL) /usr/bin/systemctl status apache2'
+    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m qlsaico ALL=(ALL:ALL) NOPASSWD: /usr/bin/systemctl status apache2'
     echo
 fi
 
@@ -214,7 +214,7 @@ fi
 
 
 # Question 4
-read -p $'\e[32m4) Add an user privilege specification that allows alls users in ADMINS alias to use sudo to run any command in the SERVICES alias, on any of the servers specified in the SERVERS alias:\e[33m\n   ' p4
+read -p $'\e[32m4) Add an user privilege specification that allows all users in ADMINS alias to use sudo to run any command in the SERVICES alias, on any of the servers specified in the SERVERS alias:\e[33m\n   ' p4
 if [[ $p4 = "ADMINS SERVERS=SERVICES" ]]; then 
     echo '   ✅'; echo
 else

@@ -345,7 +345,7 @@ fi
 
 
 # Question 11
-read -p $'\e[32m7) Print messages belonging to the group joelgang with ID=1000:\e[33m ' p11
+read -p $'\e[32m11) Print messages belonging to the group joelgang with ID=1000:\e[33m ' p11
 if [[ $p11 = '_GID=1000' ]]; then 
     echo '   ✅ '; echo
 else

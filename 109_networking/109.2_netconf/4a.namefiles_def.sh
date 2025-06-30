@@ -2,7 +2,7 @@
 
 # Author:   jOELpipAS
 # Date:     Oct|06|2024
-# Modified:  
+# Modified: Jun|03|2025 Ortography 
 
 clear
 
@@ -29,7 +29,7 @@ echo -e '+----------------------------------------------------------------------
 
 echo -e "|  /etc/hostname       |\c"
 read -sn1 
-echo -e "  Contains the name of the host machine.                        |"
+echo -e "  Contain the name of the host machine.                         |"
 echo    '|                      |                                                                |'
 
 echo -e "|  /etc/hosts          |\c"

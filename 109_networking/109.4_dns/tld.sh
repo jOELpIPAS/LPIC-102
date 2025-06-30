@@ -2,7 +2,7 @@
 
 # Author:   jOELpipAS
 # Date:     Jan|23|2025
-# Modified:  
+# Modified: Jun|16|2025  Q0 grammar fixed 
 
 clear
 
@@ -23,7 +23,7 @@ sleep 0.5
 shopt -s nocasematch
 
 # Question 0
-read -p $'\e[32mWhat TLD stands for?:\e[33m ' p0
+read -p $'\e[32mWhat does TLD stands for?:\e[33m ' p0
 if [[ $p0 = 'top level domain' ]]; then 
     echo '✅'; echo
 else
@@ -130,7 +130,7 @@ echo; echo
 
 # Question 1
 read -p $'\e[32m1) gTLD:\e[33m ' p1
-if [[ $p1 = 'generic tld' ]]; then 
+if [[ $p1 = 'generic tld' || $p1 = 'generic top level domain' ]]; then 
     echo '   ✅'; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m gENERIC TLD'
@@ -140,7 +140,7 @@ fi
 
 # Question 2
 read -p $'\e[32m2) ccTLD:\e[33m ' p2
-if [[ $p2 = 'country code tld' || $p2 = 'country-code tld' ]]; then 
+if [[ $p2 = 'country code tld' || $p2 = 'country-code tld' || $p2 = 'country code top level domain' || $p2 = 'country-code top level domain' ]]; then 
     echo '   ✅ '; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m cOUNTRY-cODE TLD'
@@ -150,7 +150,7 @@ fi
 
 # Question 3
 read -p $'\e[32m3) sTLD:\e[33m ' p3
-if [[ $p3 = 'sponsored tld' ]]; then 
+if [[ $p3 = 'sponsored tld' || $p3 = 'sponsored top level domain' ]]; then 
     echo '   ✅'; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m sPONSORED TLD'

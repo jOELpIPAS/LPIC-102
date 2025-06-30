@@ -4,6 +4,7 @@
 # Date:     Oct|13|2024
 # Modified: Oct|19|2024 Abbreviation options added. 
 #                       Correction of errors.
+#           Jun|10|2025 Q2, I options added.
 
 clear
 
@@ -24,14 +25,6 @@ sleep 0.5
 shopt -s nocasematch
 
 
-#echo 
-#echo -e "\e[0m-----------------------------------------------------"
-#echo -e "\e[36mI. cONFiG fiLES\e[0m"
-#echo -----------------------------------------------------
-#echo -e '\e[33mEnter the corresponding configuration file (full path).'
-#echo; echo
-
-
 # Question 1
 read -p $'\e[32m1) Legacy command to show all the available interfaces:\e[33m ' p1
 if [[ $p1 = 'ifconfig -a' ]]; then 
@@ -44,7 +37,7 @@ fi
 
 # Question 2
 read -p $'\e[32m2) Directory that contains the available interfaces:\e[33m ' p2
-if [[ $p2 = "/sys/class/net" || $p2 = '/sys/class/net/' ]]; then 
+if [[ $p2 = "/sys/class/net" || $p2 = '/sys/class/net/' || $p2 = 'sys/class/net' || $p2 = 'sys/class/net/' ]]; then 
     echo '   ✅ '; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m /sys/class/net/'
@@ -232,18 +225,6 @@ else
 fi
 
 
-#echo 
-#echo -e "\e[0m-----------------------------------------------------"
-#echo -e "\e[36mII. wEB iNTERFACE\e[0m"
-#echo -----------------------------------------------------
-#echo -e '\e[33mEnter the corresponding configuration file (full path).'
-#echo; echo
-
-
-#echo
-#echo -e '\e[36mIIA. Intro:'
-#echo -e '\e[0m-----------'
-#echo; echo
 
 
 echo

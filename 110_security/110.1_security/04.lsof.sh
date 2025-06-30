@@ -4,6 +4,7 @@
 # Date:     Nov|01|2024
 # Modified: Jan|25|2025     Sleep time reduced.
 #                           Q12: IP address changed.
+#           Jun|17|2025     II."aPPLiCATiON"
 
 clear
 
@@ -31,7 +32,7 @@ echo; echo
 
 
 # Question 1
-read -p $'\e[32m1) What lsof stands for?:\e[33m ' p1
+read -p $'\e[32m1) What does lsof stands for?:\e[33m ' p1
 if [[ $p1 = 'list open files' ]]; then 
     echo '   ✅'; echo
 else

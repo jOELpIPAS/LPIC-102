@@ -2,7 +2,7 @@
 
 # Author:   jOELpipAS
 # Date:     Aug|19|2024
-# Modified: Aug|20|2024 
+# Modified: Aug|20|2024 / May|11|2025 (\n)
 
 clear
 
@@ -122,7 +122,7 @@ echo; echo
 
 
 # Question 1
-read -p $'\e[32m1) Send all messages from the mail facility and a priority/severity of crit (and above) to /var/log/mail.crit:\e[33m ' p1
+read -p $'\e[32m1) Send all messages from the mail facility and a priority/severity of crit (and above) to /var/log/mail.crit:\e[33m\n   ' p1
 if [[ $p1 = "mail.crit /var/log/mail.crit" ]]; then 
     echo '   ✅'; echo
 else
@@ -132,7 +132,7 @@ fi
 
 
 # Question 2
-read -p $'\e[32m2) Send all messages from the mail facility with priorities of alert and emergency to /var/log/mail.urgent:\e[33m ' p2
+read -p $'\e[32m2) Send all messages from the mail facility with priorities of alert and emergency to /var/log/mail.urgent:\e[33m\n   ' p2
 if [[ $p2 = "mail.alert /var/log/mail.urgent" ]]; then 
     echo '   ✅ '; echo
 else
@@ -142,7 +142,7 @@ fi
 
 
 # Question 3
-read -p $'\e[32m3) Except for those coming from the cron and ntp facilities, send all messages to /var/log/allmessages:\e[33m ' p3
+read -p $'\e[32m3) Except for those coming from the cron and ntp facilities, send all messages to /var/log/allmessages:\e[33m\n   ' p3
 if [[ $p3 = "*.*;cron.none;ntp.none /var/log/allmessages" ]]; then 
     echo '   ✅'; echo
 else
@@ -152,7 +152,7 @@ fi
 
 
 # Question 4
-read -p $'\e[32m4) Send all messages from the mail facility to a remote host whose IP address is 192.168.1.88 using TCP and specifying the default port:\e[33m ' p4
+read -p $'\e[32m4) Send all messages from the mail facility to a remote host whose IP address is 192.168.1.88 using TCP and specifying the default port:\e[33m\n   ' p4
 if [[ $p4 = "mail.* @@192.168.1.88:514" ]]; then 
     echo '   ✅'; echo
 else
@@ -162,7 +162,7 @@ fi
 
 
 # Question 5
-read -p $'\e[32m5) Send all messages with only the warning priority to /var/log/warning preventing excessive writing of the disk:\e[33m ' p5
+read -p $'\e[32m5) Send all messages with only the warning priority to /var/log/warning preventing excessive writing of the disk:\e[33m\n   ' p5
 if [[ $p5 = "*.=warning -/var/log/warning" || $p5 = "*.=warn -/var/log/warning" ]]; then 
     echo '   ✅'; echo
 else
@@ -192,7 +192,7 @@ fi
 
 
 # Question 8
-read -p $'\e[32m8) Redirect all messages to a remote host with the IP address 192.168.50.15 and using the port 514, via TCP:\e[33m ' p8
+read -p $'\e[32m8) Redirect all messages to a remote host with the IP address 192.168.50.15 and using the port 514, via TCP:\e[33m\n   ' p8
 if [[ $p8 = "*.* @@192.168.50.15:514" ]]; then 
     echo '   ✅'; echo
 else
@@ -202,7 +202,7 @@ fi
 
 
 # Question 9
-read -p $'\e[32m9) Log anything besides private authentication messages to /var/log/syslog, preventing excessive disk writes:\e[33m ' p9
+read -p $'\e[32m9) Log anything besides private authentication messages to /var/log/syslog, preventing excessive disk writes:\e[33m\n   ' p9
 if [[ $p9 = "*.*;auth,authpriv.none -/var/log/syslog" ]]; then 
     echo '   ✅'; echo
 else

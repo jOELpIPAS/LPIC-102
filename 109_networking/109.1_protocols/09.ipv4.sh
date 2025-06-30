@@ -3,6 +3,7 @@
 # Author:   jOELpipAS
 # Date:     Sept|19|2024
 # Modified: Sept|20|2024 [Questions 21,22 added]  
+#            May|22|2025 [Ortography, newlines]
 
 clear
 
@@ -13,12 +14,12 @@ echo -e "        \e[36mby jOELpiPAS"
 echo
 echo
 
-sleep 0.8
+sleep 0.5
 echo -e "\e[33m************************\e[0m"
 echo -e "\e[0mANSWER WITH THE TRUTH!!:"
 echo -e "\e[33m************************\e[0m"
 echo; echo
-sleep 1
+sleep 0.5
 
 shopt -s nocasematch
 
@@ -32,7 +33,7 @@ shopt -s nocasematch
 
 
 # Question 1
-read -p $'\e[32m1) What TCP stands for?: ' p1
+read -p $'\e[32m1) What does TCP stands for?:\e[33m ' p1
 if [[ $p1 = 'Transmission Control Protocol' ]]; then 
     echo '   ✅'; echo
 else
@@ -42,7 +43,7 @@ fi
 
 
 # Question 2
-read -p $'\e[32m2) What IP stands for?:\e[33m ' p2
+read -p $'\e[32m2) What does IP stands for?:\e[33m ' p2
 if [[ $p2 = "Internet Protocol" ]]; then 
     echo '   ✅ '; echo
 else
@@ -112,7 +113,7 @@ fi
 
 
 # Question 9
-read -p $'\e[32m9) Network address used to transmit messages and data to all devices connected to a specific subnet:\e[33m ' p9
+read -p $'\e[32m9) Network address used to transmit messages and data to all devices connected to a specific subnet:\e[33m\n   ' p9
 if [[ $p9 = 'broadcast address' ]]; then 
     echo '   ✅'; echo
 else
@@ -132,7 +133,7 @@ fi
 
 
 # Question 11
-read -p $'\e[32m11) Route that takes effect when no other route is available for an IP destination address:\e[33m ' p11
+read -p $'\e[32m11) Route that takes effect when no other route is available for an IP destination address:\e[33m\n    ' p11
 if [[ $p11 = 'default route' ]]; then 
     echo '    ✅'; echo
 else
@@ -142,7 +143,7 @@ fi
 
 
 # Question 12
-read -p $'\e[32m12) The process of determining the best path for forwarding packets of data between devices on a network:\e[33m ' p12
+read -p $'\e[32m12) The process of determining the best path for forwarding packets of data between devices on a network:\e[33m\n    ' p12
 if [[ $p12 = 'routing' ]]; then 
     echo '    ✅'; echo
 else
@@ -182,7 +183,7 @@ fi
 
 
 # Question 16
-read -p $'\e[32m16) Allows hosts on an internal network, which uses private IPs, to have access to the Internet as if they were directly connected to it, with the Public IP used on a gateway:\e[33m ' p16
+read -p $'\e[32m16) Allows hosts on an internal network, which uses private IPs, to have access to the Internet as if they were directly connected to it, with the Public IP used on a gateway:\e[33m\n    ' p16
 if [[ $p16 = 'nat' ]]; then 
     echo '    ✅'; echo
 else

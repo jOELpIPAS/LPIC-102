@@ -136,7 +136,7 @@ fi
 
 echo 
 echo -e "\e[0m------------------------------------------------------------"
-echo -e "\e[36mII. aPLICATION\e[0m"
+echo -e "\e[36mII. aPPLICATION\e[0m"
 echo ------------------------------------------------------------
 echo -e '\e[33mEnter the corresponding usermod command:'
 echo; echo

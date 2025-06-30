@@ -3,6 +3,7 @@
 # Author:   jOELpipAS
 # Date:     Sept|13-14|2024
 # Modified: Jan|14|2025     shopt -s nocasematch OUT!
+#           May|15|2025     aPLiCATiON -> aPPLiCATiON
 
 clear
 
@@ -121,7 +122,7 @@ fi
 
 echo 
 echo -e "\e[0m-----------------------------------------------------"
-echo -e "\e[36mII. aPLiCATiON\e[0m"
+echo -e "\e[36mII. aPPLiCATiON\e[0m"
 echo -----------------------------------------------------
 echo -e '\e[33mEnter the corresponding command:'
 echo; echo
@@ -228,7 +229,7 @@ fi
 
 
 # Question 11
-read -p $'\e[32m11) Remove a printer named PUPA to a class named CHAMBA:\e[33m ' p11
+read -p $'\e[32m11) Remove a printer named PUPA from a class named CHAMBA:\e[33m ' p11
 if [[ $p11 = 'lpadmin -p PUPA -r CHAMBA' ]]; then 
     echo '   ✅'; echo
 else

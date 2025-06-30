@@ -8,6 +8,7 @@
 #                                        Q5: \n added.
 #                                        Q8: empty question, deleted.
 #                           Section III, Q6,7: option added.
+#           Jun|25|2025     Section   I, Q1: typo fixed.
 
 clear
 
@@ -36,7 +37,7 @@ echo; echo
 
 
 # Question 1
-read -p $'\e[32m1) Remove the offending key in joelpipas host from the infamous server in 199.168.1.2:\e[33m\n   ' p1
+read -p $'\e[32m1) Remove the offending key in joelpipas host from the infamous server in 192.168.1.2:\e[33m\n   ' p1
 if [[ $p1 = 'ssh-keygen -f /home/joelpipas/.ssh/known_hosts -R 192.168.1.2' ]]; then 
     echo '   ✅'; echo
 else

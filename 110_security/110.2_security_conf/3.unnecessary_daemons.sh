@@ -3,6 +3,7 @@
 # Author:   jOELpipAS
 # Date:     Nov|17-19|2024
 # Modified: Jan|28|2025     Sleep time reduced.  
+#           Jun|22|2025     Q3: typo fixed
 
 clear
 
@@ -49,7 +50,7 @@ fi
 
 
 # Question 3
-read -p $'\e[32m3) Enter the netstat|ss command that ckecks the status of the listening TCP and UDP connections:\n  \e[33m ' p3
+read -p $'\e[32m3) Enter the netstat command that ckecks the status of the listening TCP and UDP connections:\n  \e[33m ' p3
 if [[ $p3 = "netstat -ltu" || $p3 = 'ss -ltu' ]]; then 
     echo '   ✅'; echo
 else

@@ -150,10 +150,10 @@ fi
 
 # Question 3
 read -p $'\e[32m3) List all the existing environment variables:\e[33m ' p3
-if [[ $p3 = "export" ]]; then 
+if [[ $p3 = "export" | $p3 = 'export -p' ]]; then 
     echo '   ✅'; echo
 else
-    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m export'
+    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m export | export -p'
     echo
 fi
 
@@ -237,7 +237,6 @@ fi
 
 
 echo; echo
-echo '----------------------------------------------------------------------------------'
 echo -e '\e[33mB. Enter the corresponding command:\e[0m'
 echo '----------------------------------------------------------------------------------'
 
@@ -275,7 +274,7 @@ fi
 
 # Question 4
 read -p $'\e[32m4) Remove the variable PUPA from the environment. Enter the command with each option format (short first, longer last), separated by 3 spaces:\n  \e[33m ' p4
-if [[ $p4 = "env -u PUPA   env --unset" ]]; then 
+if [[ $p4 = "env -u PUPA   env --unset PUPA" ]]; then 
     echo '   ✅'; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m env -u PUPA   env --unset PUPA'

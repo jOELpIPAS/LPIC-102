@@ -144,18 +144,8 @@ fi
 
 
 # Question 10
-read -p $'\e[32m10) Directs traffic flow using routing protocols:\e[33m ' p10
-if [[ $p10 = 'network' ]]; then 
-    echo '    ✅'; echo
-else
-    echo -e '    \e[31m❌ CORRECT ANSWER >>\e[0m Network'
-    echo
-fi
-
-
-# Question 11
-read -p $'\e[32m11) Place the message as a frame onto the wire:\e[33m ' p11
-if [[ $p11 = 'data link' ]]; then 
+read -p $'\e[32m10) Place the message as a frame onto the wire:\e[33m ' p10
+if [[ $p10 = 'data link' ]]; then 
     echo '    ✅'; echo
 else
     echo -e '    \e[31m❌ CORRECT ANSWER >>\e[0m Data Link'
@@ -163,9 +153,9 @@ else
 fi
 
 
-# Question 12
-read -p $'\e[32m12) Wire:\e[33m ' p12
-if [[ $p12 = 'physical' ]]; then 
+# Question 11
+read -p $'\e[32m11) Wire:\e[33m ' p11
+if [[ $p11 = 'physical' ]]; then 
     echo '    ✅'; echo
 else
     echo -e '    \e[31m❌ CORRECT ANSWER >>\e[0m Physical'
@@ -173,9 +163,9 @@ else
 fi
 
 
-# Question 13
-read -p $'\e[32m13) Data encryption and decryption:\e[33m ' p13
-if [[ $p13 = 'presentation' ]]; then 
+# Question 12
+read -p $'\e[32m12) Data encryption and decryption:\e[33m ' p12
+if [[ $p12 = 'presentation' ]]; then 
     echo '    ✅'; echo
 else
     echo -e '    \e[31m❌ CORRECT ANSWER >>\e[0m Presentation'
@@ -183,25 +173,24 @@ else
 fi
 
 
+# Question 13
+read -p $'\e[32m13) Contains the sublayers LLC and MAC:\e[33m ' p13
+if [[ $p13 = 'data link' ]]; then 
+    echo '    ✅'; echo
+else
+    echo -e '    \e[31m❌ CORRECT ANSWER >>\e[0m Data Link'
+    echo
+fi
+
+
 # Question 14
-read -p $'\e[32m14) Contains the sublayers LLC and MAC:\e[33m ' p14
+read -p $'\e[32m14) Error detection and flow control:\e[33m ' p14
 if [[ $p14 = 'data link' ]]; then 
     echo '    ✅'; echo
 else
     echo -e '    \e[31m❌ CORRECT ANSWER >>\e[0m Data Link'
     echo
 fi
-
-
-# Question 15
-read -p $'\e[32m15) Error detection and flow control:\e[33m ' p15
-if [[ $p15 = 'data link' ]]; then 
-    echo '    ✅'; echo
-else
-    echo -e '    \e[31m❌ CORRECT ANSWER >>\e[0m Data Link'
-    echo
-fi
-
 
 
 

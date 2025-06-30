@@ -104,7 +104,7 @@ fi
 
 
 # Question 9
-read -p $'\e[32m9) The command from question 7 take the passphrase from STDIN and stores its hash in the file (t/f):\e[33m ' p9
+read -p $'\e[32m9) The command from question 7 take the passphrase from STDIN and store its hash in the file (t/f):\e[33m ' p9
 if [[ $p9 = 't' ]]; then 
     echo '   ✅'; echo
 else

@@ -218,7 +218,7 @@ fi
 
 
 # Question 9
-read -p $'\e[32m9) Directive in /etc/network/interfaces that indicates which interfaces will be brought up at boot time, in the order they are listed:\e[33m ' p9
+read -p $'\e[32m9) Directive in /etc/network/interfaces that indicates which interfaces will be brought up at boot time, in the order they are listed:\e[33m\n   ' p9
 if [[ $p9 = 'auto' ]]; then 
     echo '   ✅'; echo
 else

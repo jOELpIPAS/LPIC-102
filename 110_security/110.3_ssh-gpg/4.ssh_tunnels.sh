@@ -165,7 +165,7 @@ fi
 
 
 # Question 5
-read -p $'\e[32m5) Enter the command that allows anyone who establishes a connection to the server pupa on port 8585, to see the Apache2 default homepage from the localhost, whithout login to pupa and running SSH in the background:\e[33m ' p5
+read -p $'\e[32m5) Enter the command that allow anyone who establishes a connection to the server pupa on port 8585, to see the Apache2 default homepage from the localhost, whithout login to pupa and running SSH in the background:\e[33m  \n   ' p5
 if [[ $p5 = "ssh -R 8585:localhost:80 -Nf pupa" || $p5 = 'ssh -R 8585:localhost:80 -N -f pupa' ]]; then 
     echo '   ✅'; echo
 else

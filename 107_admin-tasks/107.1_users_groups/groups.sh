@@ -152,7 +152,7 @@ read -p $'\e[32m3) Complete this command to delete the user qlsaico from the gro
 if [[ $p3 = 'gpasswd -d qlsaico chuletines' ]]; then 
     echo '   ✅'; echo
 else
-    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m gpasswd qlsaico chuletines'
+    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m gpasswd -d qlsaico chuletines'
     echo
 fi
 

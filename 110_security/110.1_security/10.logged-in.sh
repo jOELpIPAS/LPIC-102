@@ -229,7 +229,7 @@ fi
 
 
 # Question 11
-read -p $'\e[32m11) Enter the short and long option used for not printing the LOGIN@, JCPU and PCPU entries in the output of the w command, separated by one space:\e[33m ' p11
+read -p $'\e[32m11) Enter the short and long option used for not printing the LOGIN@, JCPU and PCPU entries in the output of the w command, separated by one space:\e[33m\n    ' p11
 if [[ $p11 = '-s --short'  || $p11 = '--short -s' ]]; then 
     echo '    ✅'; echo
 else

@@ -122,18 +122,28 @@ fi
 
 echo 
 echo -e "\e[0m-----------------------------------------------------"
-echo -e "\e[36mIII. aPLICATION\e[0m"
+echo -e "\e[36mIII. aPPLICATION\e[0m"
 echo -----------------------------------------------------
 echo -e '\e[33mEnter the corresponding anacron job:'
 echo; echo
 
 
 # Question 1
-read -p $'\e[32m1) Run the script ~/pupa.sh everyday using bash. If the machine is off, run it 10 minutes after the machine is powered on. The job ID is pupa.daily:\n  \e[33m ' p1
+read -p $'\e[32m1) Run the script ~/pupa.sh everyday (macro instead of integer) using bash. If the machine is off, run it 10 minutes after the machine is powered on. The job ID is pupa.daily:\n  \e[33m ' p1
 if [[ $p1 = '@daily 10 pupa.daily /bin/bash ~/pupa.sh' ]]; then 
     echo '   ✅'; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m @daily 10 pupa.daily /bin/bash ~/pupa.sh'
+    echo
+fi
+
+
+# Question 2
+read -p $'\e[32m2) Run all the scripts in /etc/cron.weekly every week (integer), 15 minutes after power on. The job ID is cron.weekly:\n  \e[33m ' p2
+if [[ $p2 = '1 15 cron.weekly run-parts /etc/cron.weekly' ]]; then 
+    echo '   ✅'; echo
+else
+    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m 1 15 cron.weekly run-parts /etc/cron.weekly'
     echo
 fi
 

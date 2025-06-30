@@ -2,7 +2,7 @@
 
 # Author:   jOELpipAS
 # Date:     Sept|14,16|2024
-# Modified: 
+# Modified: May|16|2025     I, Q6 fixed.
 
 clear
 
@@ -85,7 +85,7 @@ fi
 
 # Question 6
 read -p $'\e[32m6) Send ~/book.pdf to a printer named PUPA and set the page size to A4:\e[33m ' p6
-if [[ $p6 = 'lpr -P PUPA -o media=A4 ~/book.pdf' || $p6 = 'lpr -PPUPA -o media=A4 ~/book.pdf' || $p6 = 'lp -d PUPA -o media=A4' ]]; then 
+if [[ $p6 = 'lpr -P PUPA -o media=A4 ~/book.pdf' || $p6 = 'lpr -PPUPA -o media=A4 ~/book.pdf' || $p6 = 'lp -d PUPA -o media=A4 ~/book.pdf' ]]; then 
     echo '   ✅'; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m lpr -P PUPA -o media=A4 ~/book.pdf'
@@ -348,7 +348,7 @@ read -p $'\e[32m4) Tell the PUPA printer to accept new jobs:\e[33m ' p4
 if [[ $p4 = "cupsaccept PUPA" ]]; then 
     echo '   ✅'; echo
 else
-    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m cupsaccept'
+    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m cupsaccept PUPA'
     echo
 fi
 

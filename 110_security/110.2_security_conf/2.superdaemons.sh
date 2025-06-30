@@ -5,6 +5,7 @@
 # Modified: Jan|28|2025     Sleep time reduced.
 #                           Section IIb, Q1: extra space deleted.
 #                           Section III, Q4: Re-formulation.
+#           Jun|21|2025     Section III, Q4: extra space deleted.
 
 clear
 
@@ -270,8 +271,8 @@ if [[ $p4 = "cab" ]]; then
     echo '   ✅'; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m C.Make sure that xinetd and SSH are not running.\n
-                                                A.# systemctl start ssh.socket\n
-                                                B.# lsof -i :22 -P'
+                        A.# systemctl start ssh.socket\n
+                        B.# lsof -i :22 -P'
     echo
 fi
 

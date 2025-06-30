@@ -3,6 +3,7 @@
 # Author:   jOELpipAS
 # Date:     Sept|07|2024
 # Modified: Jan|13|2025     
+#           May|12|2025   Q24 fixed 
 
 clear
 
@@ -267,7 +268,7 @@ read -p $'\e[32m24) In what file the aliases of unprivileged users are stored?:\
 if [[ $p24 = '~/.forward' ]]; then 
     echo '   ✅'; echo
 else
-    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m -l'
+    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m ~/.forward'
     echo
 fi
 
@@ -282,20 +283,14 @@ else
 fi
 
 
-shopt -s nocasematch
-
-
 # Question 26
 read -p $'\e[32m26) In the mail command, which keystroke will close the Input Mode and dispatch the email?:\e[33m ' p26
-if [[ $p26 = 'Ctrl+D' || $p26 = 'Ctrl + D' || $p26 = '^+D' ]]; then 
+if [[ $p26 = 'Ctrl+D' || $p26 = 'Ctrl + D' || $p26 = '^+D' | $p26 = 'ctrl d' ]]; then 
     echo '   ✅'; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m Ctrl+D'
     echo
 fi
-
-
-shopt -u nocasematch
 
 
 # Question 27

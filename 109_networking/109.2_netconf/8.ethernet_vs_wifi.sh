@@ -2,7 +2,7 @@
 
 # Author:   jOELpipAS
 # Date:     Jan|19|2025
-# Modified:  
+# Modified: Jun|09|2025  Q7,I fixed 
 
 clear
 
@@ -93,7 +93,7 @@ fi
 
 # Question 7
 read -p $'\e[32m7) Used by radio signal connections:\e[33m ' p7
-if [[ $p8 = 'w' ]]; then 
+if [[ $p7 = 'w' ]]; then 
     echo '   ✅'; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m Wifi (w)'

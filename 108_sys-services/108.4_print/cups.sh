@@ -24,7 +24,7 @@ shopt -s nocasematch
 
 
 # Question 0
-read -p $'\e[32mWhat "CUPS" stands for?:\e[33m ' p0
+read -p $'\e[32mWhat does "CUPS" stands for?:\e[33m ' p0
 if [[ $p0 = 'Common Unix Printing System' ]]; then 
     echo '   ✅'; echo
 else

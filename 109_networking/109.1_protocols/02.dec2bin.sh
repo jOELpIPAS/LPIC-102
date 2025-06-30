@@ -2,7 +2,7 @@
 
 # Author:   jOELpipAS
 # Date:     Sept|13|2024
-# Modified:  
+# Modified:  May|27|2025 
 
 clear
 
@@ -13,22 +13,15 @@ echo -e "                     \e[36mby jOELpiPAS"
 echo
 echo
 
-sleep 0.8
+sleep 0.5
 echo -e "\e[33m*********************************************************\e[0m"
 echo -e "\e[0mConvert the following decimal numbers into binary octets:"
 echo -e "\e[33m*********************************************************\e[0m"
 echo; echo
-sleep 1
+sleep0.5
 
 shopt -s nocasematch
 
-
-#echo 
-#echo -e "\e[0m-----------------------------------------------------"
-#echo -e "\e[36mI. cONFiG fiLES\e[0m"
-#echo -----------------------------------------------------
-#echo -e '\e[33mEnter the corresponding configuration file (full path).'
-#echo; echo
 
 
 # Question 1
@@ -230,19 +223,6 @@ else
     echo
 fi
 
-
-#echo 
-#echo -e "\e[0m-----------------------------------------------------"
-#echo -e "\e[36mII. wEB iNTERFACE\e[0m"
-#echo -----------------------------------------------------
-#echo -e '\e[33mEnter the corresponding configuration file (full path).'
-#echo; echo
-
-
-#echo
-#echo -e '\e[36mIIA. Intro:'
-#echo -e '\e[0m-----------'
-#echo; echo
 
 
 echo

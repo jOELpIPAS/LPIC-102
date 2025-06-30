@@ -2,7 +2,8 @@
 
 # Author:   jOELpipAS
 # Date:     Jan|17|2025
-# Modified:  
+# Modified: May|22|2025 
+#           May|24|2025 \n
 
 clear
 
@@ -42,7 +43,7 @@ fi
 
 
 # Question 2
-read -p $'\e[32m2) What ARP stands for?:\e[33m ' p2
+read -p $'\e[32m2) What does ARP stands for?:\e[33m ' p2
 if [[ $p2 = 'address resolution protocol' ]]; then 
     echo '   ✅ '; echo
 else
@@ -72,7 +73,7 @@ fi
 
 
 # Question 5
-read -p $'\e[32m5) What UDP stands for?:\e[33m ' p5
+read -p $'\e[32m5) What does UDP stands for?:\e[33m ' p5
 if [[ $p5 = 'user datagram protocol' ]]; then 
     echo '   ✅'; echo
 else
@@ -82,7 +83,7 @@ fi
 
 
 # Question 6
-read -p $'\e[32m6) Sends management messages between systems (like "Echo Request", "Echo Reply" and "Destination Unreachable"):\e[33m ' p6
+read -p $'\e[32m6) Sends management messages between systems (like "Echo Request", "Echo Reply" and "Destination Unreachable"):\e[33m\n   ' p6
 if [[ $p6 = 'icmp' ]]; then 
     echo '   ✅'; echo
 else
@@ -92,7 +93,7 @@ fi
 
 
 # Question 7
-read -p $'\e[32m7) What ICMP stands for?:\e[33m ' p7
+read -p $'\e[32m7) What does ICMP stands for?:\e[33m ' p7
 if [[ $p7 = 'internet control message protocol' ]]; then 
     echo '   ✅'; echo
 else
@@ -122,7 +123,7 @@ fi
 
 
 # Question 10
-read -p $'\e[32m10) What NDP stands for?:\e[33m ' p10
+read -p $'\e[32m10) What does NDP stands for?:\e[33m ' p10
 if [[ $p10 = 'neighbor discovery protocol' ]]; then 
     echo '    ✅'; echo
 else
@@ -142,7 +143,7 @@ fi
 
 
 # Question 12
-read -p $'\e[32m12) What DHCP stands for?:\e[33m ' p12
+read -p $'\e[32m12) What does DHCP stands for?:\e[33m ' p12
 if [[ $p12 = 'dynamic host configuration protocol' ]]; then 
     echo '    ✅'; echo
 else
@@ -152,7 +153,7 @@ fi
 
 
 # Question 13
-read -p $'\e[32m13) Uses the header of the mail to get the email id of the receiver and enters the mail into the queue of outgoing mail:\e[33m ' p13
+read -p $'\e[32m13) Uses the header of the mail to get the email id of the receiver and enters the mail into the queue of outgoing mail:\e[33m\n    ' p13
 if [[ $p13 = 'smtp' ]]; then 
     echo '    ✅'; echo
 else
@@ -162,7 +163,7 @@ fi
 
 
 # Question 14
-read -p $'\e[32m14) What SMTP stands for?:\e[33m ' p14
+read -p $'\e[32m14) What does SMTP stands for?:\e[33m ' p14
 if [[ $p14 = 'simple mail transfer protocol' ]]; then 
     echo '    ✅'; echo
 else
@@ -172,7 +173,7 @@ fi
 
 
 # Question 15
-read -p $'\e[32m15) Allows users to access and manage their emails on the server, rather than downloading them to a local device:\e[33m ' p15
+read -p $'\e[32m15) Allow users to access and manage their emails on the server, rather than downloading them to a local device:\e[33m ' p15
 if [[ $p15 = 'imap' ]]; then 
     echo '    ✅'; echo
 else
@@ -182,7 +183,7 @@ fi
 
 
 # Question 16
-read -p $'\e[32m16) What IMAP stands for?:\e[33m ' p16
+read -p $'\e[32m16) What does IMAP stands for?:\e[33m ' p16
 if [[ $p16 = 'Internet Message Access Protocol' ]]; then 
     echo '    ✅'; echo
 else
@@ -202,7 +203,7 @@ fi
 
 
 # Question 18
-read -p $'\e[32m18) What NTP stands for?:\e[33m ' p18
+read -p $'\e[32m18) What does NTP stands for?:\e[33m ' p18
 if [[ $p18 = 'network time protocol' ]]; then 
     echo '    ✅'; echo
 else
@@ -212,7 +213,7 @@ fi
 
 
 # Question 19
-read -p $'\e[32m19) Used for collecting and organizing information about managed devices on IP networks\n    and for modifying that information to change device behavior:\e[33m ' p19
+read -p $'\e[32m19) Used for collecting and organizing information about managed devices on IP\n    networks and for modifying that information to change device behavior:\e[33m ' p19
 if [[ $p19 = 'snmp' ]]; then 
     echo '    ✅'; echo
 else
@@ -222,7 +223,7 @@ fi
 
 
 # Question 20
-read -p $'\e[32m20) What SNMP stands for?:\e[33m ' p20
+read -p $'\e[32m20) What does SNMP stands for?:\e[33m ' p20
 if [[ $p20 = 'Simple Network Management Protocol' ]]; then 
     echo '    ✅'; echo
 else
@@ -242,7 +243,7 @@ fi
 
 
 # Question 22
-read -p $'\e[32m22) What LDAP stands for?:\e[33m ' p20
+read -p $'\e[32m22) What does LDAP stands for?:\e[33m ' p20
 if [[ $p20 = 'Lightweight Directory Access Protocol' ]]; then 
     echo '    ✅'; echo
 else

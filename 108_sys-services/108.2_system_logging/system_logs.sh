@@ -64,7 +64,7 @@ read -p $'\e[32m4) The most recent information related to the graphics card:\e[3
 if [[ $p4 = "/var/log/Xorg.0.log" ]]; then 
     echo '   ✅'; echo
 else
-    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m /var/log/Xorg.0.log.'
+    echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m /var/log/Xorg.0.log'
     echo
 fi
 

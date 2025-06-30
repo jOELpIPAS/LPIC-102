@@ -33,7 +33,7 @@ echo; echo
 
 
 # Question 1
-read -p $'\e[32m1) What SUID stands for?:\e[33m ' p1
+read -p $'\e[32m1) What does SUID stands for?:\e[33m ' p1
 if [[ $p1 = 'set user id' ]]; then 
     echo '   ✅'; echo
 else

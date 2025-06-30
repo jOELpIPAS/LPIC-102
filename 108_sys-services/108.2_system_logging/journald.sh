@@ -82,7 +82,7 @@ fi
 
 
 # Question 5
-read -p $'\e[32m5) If Storage if set to persistent, where will be stored the logs during early boot? (absolute path):\e[33m ' p5
+read -p $'\e[32m5) If Storage is set to persistent, where will be stored the logs during early boot? (absolute path):\e[33m\n   ' p5
 if [[ $p5 = "/run/log/journal" || $p5 = "/run/log/journal/" ]]; then 
     echo '   ✅'; echo
 else
@@ -150,7 +150,7 @@ fi
 
 # Question 2
 read -p $'\e[32m2) Default amount of filesystem space for log data:\e[33m ' p2
-if [[ $p2 = "10%" ]]; then 
+if [[ $p2 = "10%" | $p2 = '10' ]]; then 
     echo '   ✅ '; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m 10%'
@@ -180,7 +180,7 @@ fi
 
 # Question 5
 read -p $'\e[32m5) What is the default percentage of free space in filesystem for other users?:\e[33m ' p5
-if [[ $p5 = "15%" ]]; then 
+if [[ $p5 = "15%" | $p5 = '15' ]]; then 
     echo '   ✅'; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m 15%'

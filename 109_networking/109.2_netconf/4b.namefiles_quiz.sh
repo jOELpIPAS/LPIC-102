@@ -2,7 +2,7 @@
 
 # Author:   jOELpipAS
 # Date:     Jan|18|2025
-# Modified:  
+# Modified: Jun|03|2025 Ortography 
 
 clear
 
@@ -62,7 +62,7 @@ fi
 
 
 # Question 4
-read -p $'\e[32m4) Contains the name of the host machine:\e[33m ' p4
+read -p $'\e[32m4) Contain the name of the host machine:\e[33m ' p4
 if [[ $p4 = '/etc/hostname' ]]; then 
     echo '   ✅'; echo
 else

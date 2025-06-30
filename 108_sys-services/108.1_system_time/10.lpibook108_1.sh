@@ -1,8 +1,9 @@
 #!/bin/bash
 
 
-# Author: jOELpipAS
-# Date:   Aug|14|2024
+# Author:   jOELpipAS
+# Date:     Aug|14|2024
+# Modified: May|06|2025
 
 clear
 
@@ -13,7 +14,7 @@ echo -e "                          \e[36mby jOELpiPAS"
 echo
 echo
 
-sleep 0.8
+sleep 0.5
 echo -e "\e[33m************************\e[0m"
 echo -e "\e[0mANSWER WITH THE TRUTH!!:"
 echo -e "\e[33m************************\e[0m"
@@ -93,7 +94,7 @@ echo "B) timedatectl show-timesync --all"
 echo "C) ntpq -pn"
 echo "D) chronyc ntpdata"
 echo "E) chronyc sources"
-echo -e "\e[33mEnter a, b, c, d or e"
+echo -e '\e[33mEnter a, b, c, d, e, or "none"'
 echo "e.g.: a c"
 echo; echo
 
@@ -112,7 +113,7 @@ fi
 
 # Question 2
 read -p $'\e[32m2) Drift:\e[33m ' p2
-if [[ $p2 = "" ]]; then 
+if [[ $p2 = "none" ]]; then 
     echo '   ✅'; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m None'

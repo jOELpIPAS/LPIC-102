@@ -140,7 +140,7 @@ fi
 
 
 # Question 2
-read -p $'\e[32m2) Contains the trust values of various public keys:\e[33m ' p2
+read -p $'\e[32m2) Contain the trust values of various public keys:\e[33m ' p2
 if [[ $p2 = "trustdb.gpg" ]]; then 
     echo '   ✅ '; echo
 else
@@ -160,7 +160,7 @@ fi
 
 
 # Question 4
-read -p $'\e[32m4) Directory that contains the revocation certificate that was created along with the key pair:\n  \e[33m ' p4
+read -p $'\e[32m4) Directory that contain the revocation certificate that was created along with the key pair:\n  \e[33m ' p4
 if [[ $p4 = "opengpg-revocs.d" ]]; then 
     echo '   ✅'; echo
 else

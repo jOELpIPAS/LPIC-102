@@ -26,7 +26,7 @@ shopt -s nocasematch
 
 
 # Question 1
-read -p $'\e[32m1) What is the role of an X server in the X11 architecture?:\n    A. It serves graphical applications (clients) by displaying their output and receiving input.\n   B. It runs application code for graphical programs.\n   C. It provides user authentication for GUI sessions.\n   D. It manages networking connections for X11 applications.\n  \e[33m ' p1
+read -p $'\e[32m1) What is the role of an X server in the X11 architecture?:\n   A. It serves graphical applications (clients) by displaying their output and receiving input.\n   B. It runs application code for graphical programs.\n   C. It provides user authentication for GUI sessions.\n   D. It manages networking connections for X11 applications.\n  \e[33m ' p1
 if [[ $p1 = 'a' ]]; then 
     echo '   ✅'; echo
 else

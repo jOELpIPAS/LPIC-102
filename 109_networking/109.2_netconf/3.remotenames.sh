@@ -2,7 +2,7 @@
 
 # Author:   jOELpipAS
 # Date:     Oct|04|2024
-# Modified:  
+# Modified: June|02|2025 
 
 clear
 
@@ -13,12 +13,12 @@ echo -e "                \e[36mby jOELpiPAS"
 echo
 echo
 
-sleep 0.8
+sleep 0.5
 echo -e "\e[33m************************\e[0m"
 echo -e "\e[0mANSWER WITH THE TRUTH!!:"
 echo -e "\e[33m************************\e[0m"
 echo; echo
-sleep 1
+sleep 0.5
 
 shopt -s nocasematch
 
@@ -42,7 +42,7 @@ fi
 
 
 # Question 2
-read -p $'\e[32m2) What NSS stands for?:\e[33m ' p2
+read -p $'\e[32m2) What does NSS stands for?:\e[33m ' p2
 if [[ $p2 = "Name Service Switch" ]]; then 
     echo '   ✅ '; echo
 else

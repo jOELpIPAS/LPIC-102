@@ -76,7 +76,7 @@ fi
 
 # Question 5
 read -p $'\e[32m5) PID of the program that generated the message:\e[33m ' p5
-if [[ $p5 = "[448]" || $p5 = '[448]:' ]]; then 
+if [[ $p5 = "[448]" || $p5 = '[448]:' || $p5 = '448' ]]; then 
     echo '   ✅'; echo
 else
     echo -e '   \e[31m❌ CORRECT ANSWER >>\e[0m [448]'
